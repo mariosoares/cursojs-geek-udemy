@@ -3,12 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Eventos inline</title>
+        <!-- eventos inline -> aqueles que configuro direto na minha aplicação web -->
     </head>
-    <body onclick="mudarCor();">
+       <body onclick="mudarCor();">  <!-- bodey é só onde está o conteúdo,se clicar embaixo da página não funciona-->
         <button onclick="mostrarAlerta();">Por favor, clique-me!</button>
 
         <br/><br/>
         <span class="info" onmouseover="mudarTexto(this);"><b>Atenção!</b> Não clique no botão acima!</span>
+        <!-- this é o elemento,no caso span -->
 
         <br/><br/>
         <input onkeyup="escreverTexto(this);" />

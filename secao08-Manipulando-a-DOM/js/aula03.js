@@ -1,3 +1,6 @@
+// eventos por meio dos quais o usuário interage com a página
+// eventos inline --> aqueles que configuro direto na minha página web
+
 function mostrarAlerta(){
     alert('O botão foi clicado!');
 }
@@ -13,10 +16,13 @@ function mudarCor(){
 
     const numero = Math.floor((Math.random() * cores.length) + 1);
 
-    document.bgColor = cores[numero];
+    // bgColor está obsoleto no HTML de nível 2 do DOM. A alternativa recomendada é o uso do estilo CSS
+    // background-color que pode ser acessado através do DOM com document. corpo. estilo.
+    //document.bgColor = cores[numero]; //document.bgcolor is deprecated
+    document.body.style.backgroundColor = cores[numero];
 }
 
-function escreverTexto(input){
+function escreverTexto(input){ // o parâmetro poderia ser qualquer nome
     let span = document.getElementById('texto');
 
     span.innerHTML = input.value;
