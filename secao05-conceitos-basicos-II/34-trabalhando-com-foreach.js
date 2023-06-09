@@ -1,4 +1,4 @@
-var cursos = [
+let cursos = [
     'Programação para Leigos',
     'Algoritmos e Lógica de Programação',
     'Programação em C',
